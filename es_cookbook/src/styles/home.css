@@ -24,3 +24,43 @@
     background-color: var(--light-grey);
     flex: 1;
 }
+
+.highlighted_recipe {
+    margin: 3rem 0;
+}
+
+.highlighted_recipe .container {
+    background-color: var(--light-grey);
+    padding: 1rem 2rem 2rem 2rem;
+    border-radius: 5px;
+}
+
+.highlighted_recipe .highlighted_header {
+    margin-bottom: 1rem;
+}
+
+.highlighted_recipe .highlighted_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.highlighted_recipe .highlighted_text .date {
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+.highlighted_recipe .highlighted_text h3 {
+    font-size: 2.5rem;
+}
+
+.highlighted_recipe .highlighted_text p {
+    margin-top: .3rem;
+}
+
+.highlighted_recipe .highlighted_text a {
+    margin-top: auto;
+    color: var(--green);
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
