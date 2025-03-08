@@ -10,37 +10,35 @@ function Home() {
     <>
       <div className="home-banner">
         <div className="banner-left">
-          <h2>Header</h2>
+          <h2>Welcome to ES Cookbook</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
-            assumenda, doloremque expedita, inventore adipisci vero, ipsum
-            similique dignissimos ad nisi architecto neque dolores voluptas
-            incidunt cum reprehenderit? Doloribus, nostrum molestiae.
+            A collection of my favorite recipes—some I’ve created, some I’ve
+            learned from amazing cooks I admire. Every dish here is something
+            I’ve tested, loved, and made over and over again.
           </p>
         </div>
         <div className="banner-right">
+          <h3>Real Recipes, Real Stories</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-            laudantium, eligendi quod impedit, deserunt sunt velit saepe
-            corrupti asperiores fugit atque porro perspiciatis. Nihil sed dicta
-            consequuntur? Ut, laboriosam nesciunt? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Temporibus maxime tempora magnam,
-            blanditiis est possimus iusto cumque. Aspernatur, maxime debitis
-            doloribus aut soluta ipsum obcaecati ex magnam, iusto, dolores amet.
+            This isn’t just a cookbook; it’s a journey through flavors and
+            memories. You’ll find recipes I’ve tweaked to perfection, ones I’ve
+            borrowed from my favorite chefs, and dishes inspired by the people I
+            follow. Each recipe is made with real ingredients for real, everyday
+            moments—because great food should be simple and satisfying.
           </p>
         </div>
       </div>
 
-      <div className="highlighted_recipe">
+      <div className="highlighted-recipe">
         <Container>
           <Row>
-            <h2 className="highlighted_header">This Week's Recipe</h2>
+            <h2 className="highlighted-header">This Week's Recipe</h2>
           </Row>
           <Row>
-            <Col sm={3}>
+            <Col sm={4} className="img-col">
               <Image src={Brownie} fluid />
             </Col>
-            <Col sm={9} className="highlighted_text">
+            <Col sm={8} className="highlighted-text">
               <div>
                 <span className="date">March 8, 2025</span>
                 <h3>Best Ever Brownies</h3>

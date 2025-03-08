@@ -10,7 +10,7 @@ function Footer() {
         <Container>
           <Row className="g-4">
             <Col sm={4} className="text-center">
-              <h4 className="footer_header">ES Cookbook</h4>
+              <h4 className="footer-header">ES Cookbook</h4>
               <ul>
                 <li>
                   <a href="#">About Us</a>
@@ -27,7 +27,7 @@ function Footer() {
               </ul>
             </Col>
             <Col sm={4} className="text-center">
-              <h4 className="footer_header">Food & Recipes</h4>
+              <h4 className="footer-header">Food & Recipes</h4>
               <ul>
                 <li>
                   <a href="#">Sugar Free</a>
@@ -44,7 +44,7 @@ function Footer() {
               </ul>
             </Col>
             <Col sm={4} className="text-center">
-              <h4 className="footer_header">Our Links</h4>
+              <h4 className="footer-header">Our Links</h4>
               <div className="links">
                 <a href="#">
                   <i class="bi bi-facebook"></i>
@@ -61,7 +61,7 @@ function Footer() {
               </div>
             </Col>
           </Row>
-          <Row className="copy_right">
+          <Row className="copy-right">
             <Col>
               <p className="text-center">
                 &copy; 2025 ES Cookbook. All Rights Reserved

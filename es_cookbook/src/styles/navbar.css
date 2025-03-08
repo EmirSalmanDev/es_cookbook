@@ -70,3 +70,13 @@ nav.navbar {
         width: 15%;
     }
 }
+
+@media (max-width: 576px) {
+    .nav-footer-text span{
+        font-size: .75rem;
+    }
+
+    .nav-footer-text em{
+        font-size: .9rem;
+    }
+}

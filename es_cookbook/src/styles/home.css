@@ -15,52 +15,179 @@
     flex: 1;
 }
 
+.home-banner .banner-left h2 {
+    font-weight: 600;
+}
+
+.home-banner .banner-left p {
+    font-size: 1.2rem;
+}
+
 .home-banner .banner-right {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
     padding: 2rem;
     background-color: var(--light-grey);
     flex: 1;
 }
 
-.highlighted_recipe {
+.home-banner .banner-right h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+.highlighted-recipe {
     margin: 3rem 0;
 }
 
-.highlighted_recipe .container {
+.highlighted-recipe .container {
     background-color: var(--light-grey);
     padding: 1rem 2rem 2rem 2rem;
     border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1),
+            0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
-.highlighted_recipe .highlighted_header {
+.highlighted-recipe .highlighted-header {
     margin-bottom: 1rem;
 }
 
-.highlighted_recipe .highlighted_text {
+.highlighted-recipe .highlighted-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.highlighted_recipe .highlighted_text .date {
+.highlighted-recipe .highlighted-text .date {
     font-weight: 300;
     font-size: 0.875rem;
 }
 
-.highlighted_recipe .highlighted_text h3 {
+.highlighted-recipe .highlighted-text h3 {
     font-size: 2.5rem;
 }
 
-.highlighted_recipe .highlighted_text p {
+.highlighted-recipe .highlighted-text p {
     margin-top: .3rem;
+    font-size: 1.2rem;
 }
 
-.highlighted_recipe .highlighted_text a {
+.highlighted-recipe .highlighted-text a {
     margin-top: auto;
+    font-size: 1.2rem;
     color: var(--green);
     font-size: 1.2rem;
     text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+    .home-banner .banner-left p {
+        font-size: 1rem;
+    }
+
+    .home-banner .banner-left h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-banner .banner-right h3 {
+        font-size: 1.2rem;
+    }
+
+    .home-banner .banner-right p {
+        font-size: 0.875rem;
+    }
+
+    .highlighted-recipe .highlighted-text h3 {
+        font-size: 1.8rem;
+    }
+
+    .highlighted-recipe .highlighted-text p {
+        margin-top: 0;
+        font-size: 0.875rem;
+    }
+
+    .highlighted-recipe .highlighted-text a {
+        font-size: .875rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-banner {
+        height: 35vh;
+    }
+
+    .home-banner .banner-left {
+        padding: 1rem;
+    }
+
+    .home-banner .banner-left p {
+        font-size: .9rem;
+    }
+
+    .home-banner .banner-left h2 {
+        font-size: 1.4rem;
+    }
+
+    .home-banner .banner-right {
+        padding: 1rem;
+    }
+
+    .home-banner .banner-right h3 {
+        font-size: 1.1rem;
+    }
+
+    .home-banner .banner-right p {
+        font-size: 0.75rem;
+    }
+
+    .highlighted-recipe .highlighted-text {
+        max-height: 200px;
+    }
+
+    .highlighted-recipe .highlighted-text h3 {
+        font-size: 1.4rem;
+    }
+
+    .highlighted-recipe .highlighted-text p {
+        margin-top: 0;
+        font-size: 0.875rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* 3 satırda sınırlama yapar */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+    }
+
+    .highlighted-recipe .highlighted-text a {
+        font-size: .875rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-banner {
+        flex-direction: column;
+        min-height: 360px;
+    }
+
+    .home-banner p {
+        margin-bottom: 0;
+    }
+
+    .home-banner .banner-left {
+        min-height: 180px;
+    }
+
+    .home-banner .banner-right {
+        min-height: 180px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .highlighted-recipe .highlighted-text {
+        margin-top: .8rem;
+    }
 }

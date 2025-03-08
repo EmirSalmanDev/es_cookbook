@@ -1,4 +1,5 @@
 footer {
+    margin-top: auto;
     padding: 3rem 0 0 0;
     background-color: var(--vanilla);
     color: var(--brown);
@@ -8,13 +9,13 @@ footer ul {
     padding: 0;
 }
 
-footer .footer_header {
+footer .footer-header {
     position: relative;
     margin-bottom: .7rem;
     font-size: 1.3rem;
 }
 
-footer .footer_header::before {
+footer .footer-header::before {
     position: absolute;
     content: "";
     background-color: var(--brown);
@@ -41,7 +42,7 @@ footer .links a {
     font-size: 2.5rem;
 }
 
-footer .copy_right {
+footer .copy-right {
     margin-top: 1rem;
 }
 
@@ -53,4 +54,18 @@ footer a:hover {
     color: var(--green);
     transform: scale(1.1);
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    footer .footer-header {
+        font-size: 1.1rem;
+    }
+
+    footer ul li {
+        font-size: .875rem;
+    }
+
+    footer .links a {
+        font-size: 2rem;
+    }
 }
