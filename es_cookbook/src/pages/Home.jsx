@@ -1,11 +1,17 @@
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Button, Card } from "react-bootstrap";
 import "../styles/home.css";
-import Brownie from "../assets/brownie.jpg";
+import "../styles/recipeCard.css";
+import BrownieImg from "../assets/brownieImg.jpg";
 import { recipes } from "../components/recipes";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
   const navigate = useNavigate();
+
+  const handleNavigate = (id) => {
+    navigate(`/recipe/${id}`);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <>
@@ -37,7 +43,7 @@ function Home() {
           </Row>
           <Row>
             <Col sm={4} className="img-col">
-              <Image src={Brownie} fluid />
+              <Image src={BrownieImg} fluid />
             </Col>
             <Col sm={8} className="highlighted-text">
               <div>
@@ -58,19 +64,42 @@ function Home() {
       </div>
 
       <div className="recipes">
-        <Container>
+        <Container className="my-5">
           <Row>
-            <h2>Recipes</h2>
+            <h2 className="recipes-header">Recipes</h2>
           </Row>
-          <Row>
+          <Row className="g-4 pb-5 justify-content-center">
             {recipes.map((recipe) => (
-              <div key={recipe.id} className="recipe-card">
-                <h2>{recipe.title}</h2>
-                <p>{recipe.description}</p>
-                <button onClick={() => navigate(`/recipe/${recipe.id}`)}>
-                  See the Recipe
-                </button>
-              </div>
+              <Col
+                key={recipe.id}
+                lg={4}
+                md={6}
+                sm={12}
+                className="recipe-card-box"
+              >
+                <Card style={{ width: "18rem" }} className="recipe-card">
+                  <Card.Img
+                    className="card-image"
+                    variant="top"
+                    src={
+                      new URL(`../assets/${recipe.image}.jpg`, import.meta.url)
+                        .href
+                    }
+                    alt={recipe.title}
+                  />
+                  <Card.Body>
+                    <Card.Title>{recipe.title}</Card.Title>
+                    <Card.Text>{recipe.description}</Card.Text>
+                    <Button
+                      variant="primary"
+                      className="custom-btn"
+                      onClick={() => handleNavigate(recipe.id)}
+                    >
+                      See the Recipe
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Col>
             ))}
           </Row>
         </Container>

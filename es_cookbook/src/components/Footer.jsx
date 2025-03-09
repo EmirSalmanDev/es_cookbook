@@ -47,16 +47,16 @@ function Footer() {
               <h4 className="footer-header">Our Links</h4>
               <div className="links">
                 <a href="#">
-                  <i class="bi bi-facebook"></i>
+                  <i className="bi bi-facebook"></i>
                 </a>
                 <a href="#">
-                  <i class="bi bi-instagram"></i>
+                  <i className="bi bi-instagram"></i>
                 </a>
                 <a href="#">
-                  <i class="bi bi-twitter-x"></i>
+                  <i className="bi bi-twitter-x"></i>
                 </a>
                 <a href="#">
-                  <i class="bi bi-pinterest"></i>
+                  <i className="bi bi-pinterest"></i>
                 </a>
               </div>
             </Col>
