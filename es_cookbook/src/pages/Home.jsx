@@ -1,8 +1,12 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "../styles/home.css";
 import Brownie from "../assets/brownie.jpg";
+import { recipes } from "../components/recipes";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="home-banner">
@@ -49,6 +53,25 @@ function Home() {
               </p>
               <a href="#">Go to the recipe</a>
             </Col>
+          </Row>
+        </Container>
+      </div>
+
+      <div className="recipes">
+        <Container>
+          <Row>
+            <h2>Recipes</h2>
+          </Row>
+          <Row>
+            {recipes.map((recipe) => (
+              <div key={recipe.id} className="recipe-card">
+                <h2>{recipe.title}</h2>
+                <p>{recipe.description}</p>
+                <button onClick={() => navigate(`/recipe/${recipe.id}`)}>
+                  See the Recipe
+                </button>
+              </div>
+            ))}
           </Row>
         </Container>
       </div>

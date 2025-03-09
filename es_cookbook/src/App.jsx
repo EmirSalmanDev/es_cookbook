@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import CookBookNavbar from "./components/CookBookNavbar";
 import Footer from "./components/Footer";
+import RecipeDetail from "./components/RecipeDetail";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/aboutMe" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="/recipe/:id" element={<RecipeDetail />} />
       </Routes>
 
       <Footer />
