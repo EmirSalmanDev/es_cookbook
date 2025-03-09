@@ -47,7 +47,7 @@ footer .copy-right {
 }
 
 footer a {
-    transition: all .4s;
+    transition: all .4s ease-in-out;
 }
 
 footer a:hover {

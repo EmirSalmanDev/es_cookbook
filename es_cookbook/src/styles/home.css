@@ -45,7 +45,7 @@
 
 .highlighted-recipe .container {
     background-color: var(--light-grey);
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 1rem 3rem 2rem 3rem;
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1),
             0 2px 4px rgba(0, 0, 0, 0.06);
@@ -141,6 +141,10 @@
 
     .home-banner .banner-right p {
         font-size: 0.75rem;
+    }
+
+    .highlighted-recipe .highlighted-header {
+        font-size: 1.3rem;
     }
 
     .highlighted-recipe .highlighted-text {

@@ -52,6 +52,22 @@ ul {
 }
 
 /* Button */
-.custom_btn {
-    background-color: salmon;
+.custom-btn {
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    color: var(--light-grey);
+}
+
+.custom-btn:hover {
+    background-color: var(--vanilla);
+    color: var(--green);
+    border: 1px solid var(--green);
+}
+
+.custom-btn:focus,
+.custom-btn:active {
+    background-color: var(--green) !important;
+    border-color: var(--green) !important;
+    color: var(--light-grey) !important;
+    box-shadow: none !important;
 }
