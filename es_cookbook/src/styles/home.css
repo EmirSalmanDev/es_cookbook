@@ -159,7 +159,7 @@
         margin-top: 0;
         font-size: 0.875rem;
         display: -webkit-box;
-        -webkit-line-clamp: 3; /* 3 satırda sınırlama yapar */
+        -webkit-line-clamp: 3; /* 3 line limit */
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
