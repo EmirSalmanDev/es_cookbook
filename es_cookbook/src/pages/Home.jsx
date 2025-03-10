@@ -57,7 +57,7 @@ function Home() {
                 birthday party, Bible study, basketball thingy, or Friday night
                 lounge party on the couch.
               </p>
-              <a href="#">Go to the recipe</a>
+              <a href="/recipe/brownie">Go to the recipe</a>
             </Col>
           </Row>
         </Container>

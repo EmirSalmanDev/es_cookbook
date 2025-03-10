@@ -15,24 +15,20 @@ function Brownie() {
               <Col>
                 <h3 className="section-title">Ingredients</h3>
                 <ListGroup variant="flush">
-                  <ListGroup.Item>230 grams butter</ListGroup.Item>
-                  <ListGroup.Item>230 grams dark chocolate</ListGroup.Item>
+                  <ListGroup.Item>230 g butter</ListGroup.Item>
+                  <ListGroup.Item>230 g dark chocolate</ListGroup.Item>
                   <ListGroup.Item>1 packet vanilla sugar</ListGroup.Item>
                   <ListGroup.Item>
                     1 heaping teaspoon instant coffee
                   </ListGroup.Item>
+                  <ListGroup.Item>75 g cocoa powder (3/4 cup)</ListGroup.Item>
                   <ListGroup.Item>
-                    75 grams cocoa powder (3/4 cup)
+                    200 g granulated sugar (1 cup)
                   </ListGroup.Item>
-                  <ListGroup.Item>
-                    200 grams granulated sugar (1 cup)
-                  </ListGroup.Item>
-                  <ListGroup.Item>
-                    150 grams brown sugar (3/4 cup)
-                  </ListGroup.Item>
+                  <ListGroup.Item>150 g brown sugar (3/4 cup)</ListGroup.Item>
                   <ListGroup.Item>5 large eggs</ListGroup.Item>
                   <ListGroup.Item>
-                    130 grams flour (1 cup + 1 heaping tablespoon)
+                    130 g flour (1 cup + 1 heaping tablespoon)
                   </ListGroup.Item>
                   <ListGroup.Item>1.5 teaspoons salt</ListGroup.Item>
                 </ListGroup>

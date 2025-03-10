@@ -27,9 +27,7 @@ function Cookie() {
                   </ListGroup.Item>
                   <ListGroup.Item>1 packet baking powder</ListGroup.Item>
                   <ListGroup.Item>1 packet vanilla sugar</ListGroup.Item>
-                  <ListGroup.Item>
-                    150-180g finely chopped chocolate
-                  </ListGroup.Item>
+                  <ListGroup.Item>150-180g chopped chocolate</ListGroup.Item>
                 </ListGroup>
               </Col>
             </Row>
