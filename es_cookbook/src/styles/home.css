@@ -83,6 +83,37 @@
     text-decoration: underline;
 }
 
+@media (min-width: 1600px) {
+    .home-banner .banner-left p {
+        font-size: 1.5rem;
+    }
+
+    .home-banner .banner-left h2 {
+        font-size: 2.5rem;
+    }
+
+    .home-banner .banner-right h3 {
+        font-size: 2rem;
+    }
+
+    .home-banner .banner-right p {
+        font-size: 1.3rem;
+    }
+
+    .highlighted-recipe .highlighted-text h3 {
+        font-size: 2.8rem;
+    }
+
+    .highlighted-recipe .highlighted-text p {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .highlighted-recipe .highlighted-text a {
+        font-size: 1.4rem;
+    }
+}
+
 @media (max-width: 992px) {
     .home-banner .banner-left p {
         font-size: 1rem;

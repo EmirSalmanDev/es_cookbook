@@ -30,6 +30,19 @@
     margin: 3px 0;
 }
 
+@media (min-width: 1600px) {
+    .card-body .recipe-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .list-group .list-group-item {
+        font-size: 1.2rem;
+    }
+}
 
 @media (max-width: 768px) {
     .recipe-card {

@@ -72,6 +72,7 @@ function Home() {
             {recipes.map((recipe) => (
               <Col
                 key={recipe.id}
+                xl={3}
                 lg={4}
                 md={6}
                 sm={12}

@@ -47,7 +47,12 @@ function Cookie() {
                     18-24 hours).
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    Bake in a preheated oven at 200°C (without fan) for 11
+                    Shape the dough into balls as desired. The recipe is
+                    designed for portions approximately three fingers in length
+                    and two fingers in width.
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    Bake in a preheated oven at 200°C (without fan) for 10-12
                     minutes.
                   </ListGroup.Item>
                   <ListGroup.Item>

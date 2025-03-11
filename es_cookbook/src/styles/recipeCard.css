@@ -36,6 +36,20 @@
     background-color: var(--light-grey);
 }
 
+@media (min-width: 1600px) {
+    .card-image {
+        height: 20rem;
+    }
+
+    .recipes .card-body .card-title {
+        font-size: 1.6rem;
+    }
+
+    .recipes .card-body .card-text {
+        font-size: 1.2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .card-image {
         height: 15rem;
