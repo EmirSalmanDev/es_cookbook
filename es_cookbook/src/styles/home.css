@@ -75,12 +75,8 @@
     font-size: 1.2rem;
 }
 
-.highlighted-recipe .highlighted-text a {
+.highlighted-recipe .highlighted-text button {
     margin-top: auto;
-    font-size: 1.2rem;
-    color: var(--green);
-    font-size: 1.2rem;
-    text-decoration: underline;
 }
 
 @media (min-width: 1600px) {
@@ -143,6 +139,10 @@
     .highlighted-recipe .highlighted-text a {
         font-size: .875rem;
     }
+
+    .highlighted-recipe .highlighted-text button {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -200,6 +200,11 @@
     .highlighted-recipe .highlighted-text a {
         font-size: .875rem;
     }
+
+    .highlighted-recipe .highlighted-text button {
+        font-size: 0.75rem;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -224,5 +229,9 @@
 
     .highlighted-recipe .highlighted-text {
         margin-top: .8rem;
+    }
+
+    .highlighted-recipe .highlighted-text button {
+        font-size: 1rem;
     }
 }

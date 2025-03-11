@@ -49,10 +49,10 @@ function Home() {
             <h2 className="highlighted-header">This Week's Recipe</h2>
           </Row>
           <Row>
-            <Col sm={4} className="img-col">
+            <Col md={4} sm={5} className="img-col">
               <Image src={BrownieImg} fluid />
             </Col>
-            <Col sm={8} className="highlighted-text">
+            <Col md={8} sm={7} className="highlighted-text">
               <div>
                 <span className="date">March 8, 2025</span>
                 <h3>Best Ever Brownies</h3>
@@ -64,7 +64,13 @@ function Home() {
                 birthday party, Bible study, basketball thingy, or Friday night
                 lounge party on the couch.
               </p>
-              <a href="/recipe/brownie">Go to the recipe</a>
+              <Button
+                variant="primary"
+                className="custom-btn"
+                onClick={() => handleNavigate("brownie")}
+              >
+                See the Recipe
+              </Button>
             </Col>
           </Row>
         </Container>
