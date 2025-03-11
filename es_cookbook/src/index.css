@@ -53,9 +53,9 @@ ul {
 
 /* Button */
 .custom-btn {
-    background-color: var(--green);
-    border: 1px solid var(--green);
-    color: var(--light-grey);
+    background-color: var(--green)!important;
+    border: 1px solid var(--green)!important;
+    color: var(--light-grey)!important;
 }
 
 .custom-btn:hover {
@@ -66,6 +66,26 @@ ul {
 
 .custom-btn:focus,
 .custom-btn:active {
+    background-color: var(--green) !important;
+    border-color: var(--green) !important;
+    color: var(--light-grey) !important;
+    box-shadow: none !important;
+}
+
+.selected-btn {
+    background-color: var(--light-grey);
+    color: var(--green);
+    border: 1px solid var(--green);
+}
+
+.selected-btn:hover {
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    color: var(--light-grey);
+}
+
+.selected-btn:focus,
+.selected-btn:active {
     background-color: var(--green) !important;
     border-color: var(--green) !important;
     color: var(--light-grey) !important;

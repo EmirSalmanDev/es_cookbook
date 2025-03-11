@@ -4,6 +4,7 @@ import "../styles/recipeCard.css";
 import BrownieImg from "../assets/brownieImg.jpg";
 import { recipes } from "../components/recipes";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Home() {
   const navigate = useNavigate();
@@ -12,6 +13,12 @@ function Home() {
     navigate(`/recipe/${id}`);
     window.scrollTo(0, 0);
   };
+
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const filteredRecipes =
+    selectedCategory === "all"
+      ? recipes
+      : recipes.filter((recipe) => recipe.category.includes(selectedCategory));
 
   return (
     <>
@@ -68,8 +75,45 @@ function Home() {
           <Row>
             <h2 className="recipes-header">Recipes</h2>
           </Row>
+          <Row className="filtering-buttons mb-4 ">
+            <Button
+              className={`mx-2 ${
+                selectedCategory === "all" ? "custom-btn" : "selected-btn"
+              }`}
+              onClick={() => setSelectedCategory("all")}
+            >
+              All
+            </Button>
+
+            <Button
+              className={`mx-2 ${
+                selectedCategory === "cake" ? "custom-btn" : "selected-btn"
+              }`}
+              onClick={() => setSelectedCategory("cake")}
+            >
+              Cake
+            </Button>
+
+            <Button
+              className={`mx-2 ${
+                selectedCategory === "snack" ? "custom-btn" : "selected-btn"
+              }`}
+              onClick={() => setSelectedCategory("snack")}
+            >
+              Snack
+            </Button>
+
+            <Button
+              className={`mx-2 ${
+                selectedCategory === "pastry" ? "custom-btn" : "selected-btn"
+              }`}
+              onClick={() => setSelectedCategory("pastry")}
+            >
+              Pastry
+            </Button>
+          </Row>
           <Row className="g-4 pb-5 justify-content-center">
-            {recipes.map((recipe) => (
+            {filteredRecipes.map((recipe) => (
               <Col
                 key={recipe.id}
                 xl={3}
