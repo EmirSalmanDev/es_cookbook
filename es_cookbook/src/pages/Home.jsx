@@ -11,7 +11,6 @@ function Home() {
 
   const handleNavigate = (id) => {
     navigate(`/recipe/${id}`);
-    window.scrollTo(0, 0);
   };
 
   const [selectedCategory, setSelectedCategory] = useState("all");

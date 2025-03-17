@@ -1,7 +1,15 @@
 import { Container, Row, Col, Card, ListGroup } from "react-bootstrap";
 import "../styles/recipe.css";
+import { useEffect } from "react";
 
 function Cookie() {
+  useEffect(() => {
+    const scrollTimeout = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+
+    return () => clearTimeout(scrollTimeout);
+  }, []);
   return (
     <>
       <Container className="my-5">

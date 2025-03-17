@@ -1,7 +1,15 @@
 import "../styles/recipe.css";
 import { Container, Row, Col, Card, ListGroup } from "react-bootstrap";
+import { useEffect } from "react";
 
 function CinnamonRoll() {
+  useEffect(() => {
+    const scrollTimeout = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+
+    return () => clearTimeout(scrollTimeout);
+  }, []);
   return (
     <>
       <Container className="my-5">
